@@ -31,4 +31,4 @@ $conn->close();
 
 
 ?>
-<meta http-equiv="refresh" content="10;/mediciones/fsc/formulario.php">
+<meta http-equiv="refresh" content="1;/mediciones/fsc/formulario.php">
