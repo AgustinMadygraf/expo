@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+
+<?php
+        if (file_exists("datos.csv")) {
+            $file = fopen("datos.csv", "r");
+            $data = fgetcsv($file);
+            fclose($file);
+            $vel_ult = intval($data[0]);
+        }
+        echo "vel_ult:".$vel_ult;
+    ?>
+
 <html>
 <head>
     <title>Formulario FSC</title>
@@ -50,15 +61,7 @@
     </form>
 
     <div id="chart_div"></div>
-    <?php
-        if (file_exists("datos.csv")) {
-            $file = fopen("datos.csv", "r");
-            $data = fgetcsv($file);
-            fclose($file);
-            $vel_ult = intval($data[0]);
-        }
-        echo "vel_ult:".$vel_ult;
-    ?>
+   
 
     <meta http-equiv="refresh" content="60;index.php">
 </body>
