@@ -2,8 +2,8 @@
 <form id="myForm" action="procesar.php" method="get">
   <table>
     <tr>
-      <td><label for="Peso">Peso: [RPM]</label></td>
-      <td><input type="number" id="Peso" name="Peso"></td>
+      <td><label for="peso">Peso: [gr]</label></td>
+      <td><input type="number" id="peso" name="peso"></td>
     </tr>
     <tr>
       <td><label>Tiempo:</label></td>
